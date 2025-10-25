@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    background-color: rgba(163, 223, 75,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.clock{
+    background-color:rgba(0, 255, 255, 0.355);
+    border: 5px solid black;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    box-shadow:0 0 10px 10px rgba(0, 0, 0, 0.612);
+    position:relative;
+}
+.minute{
+    position:absolute;
+    width:30%;
+    height: 5px;
+    border: 2px solid rgba(82, 82, 239,0.5);
+    top: 50%;
+    left: 50%;
+    background-color:rgba(255, 60, 0, 0.97);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.756);
+}
+.seconds{
+    position:absolute;
+    width:5px;
+    height:40%;
+    border:1px solid black;
+    top:50%;
+    left: 50%;
+    background-color: black;
+}
