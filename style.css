@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
 }
 body{
     background-color:rgb(208, 163, 208);
@@ -22,20 +22,152 @@ body{
 }
 .minute{
     position:absolute;
-    width:30%;
+    width:35%;
     height: 5px;
     border: 2px solid rgba(82, 82, 239,0.5);
     top: 50%;
     left: 50%;
     background-color:rgba(255, 60, 0, 0.97);
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.756);
+    transform-origin: left center;
+    animation: rotateMinute 3600s linear infinite;
 }
 .seconds{
     position:absolute;
-    width:5px;
+    width:3px;
     height:40%;
     border:1px solid black;
-    top:50%;
+    top:11%;
     left: 50%;
     background-color: black;
+    transform-origin: bottom center;
+    animation: rotateSecond 60s linear infinite;
+    transform: rotate(0deg);
+    box-shadow: 0 0 1px 1px;
 }
+.hour {
+    position: absolute;
+    width: 35%;
+    height: 5px;
+    background-color: rgb(157, 42, 165);
+    top: 50%;
+    left: 50%;
+    transform-origin: left center;
+    transform: rotate(0deg);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+    transform: rotate(0deg);
+    animation: rotateHour 43200s linear infinite; 
+}
+.num:nth-child(1){
+    position: absolute;
+    top: 10%;
+    left:74%;
+    font-weight: bolder;
+    color:rgb(115, 80, 255);
+    font-size: 20px;
+}
+.num:nth-child(2){
+    position: absolute;
+    top: 27%;
+    left:90%;
+    font-weight: bolder;
+    color:rgb(115, 80, 255);
+    font-size: 20px;
+}
+.num:nth-child(3){
+    position: absolute;
+    top: 48%;
+    left:95%;
+    font-weight: bolder;
+    color:rgb(115, 80, 255);
+    font-size: 20px;
+}
+.num:nth-child(4){
+    position: absolute;
+    top: 71%;
+    left:87%;
+    font-weight: bolder;
+    color:rgb(115, 80, 255);
+    font-size: 20px;
+}
+.num:nth-child(5){
+    position: absolute;
+    top: 86%;
+    left:74%;
+    font-weight: bolder;
+    color:rgb(115, 80, 255);
+    font-size: 20px;
+}
+.num:nth-child(6){
+    position: absolute;
+    top: 94%;
+    left:49%;
+    font-weight: bolder;
+    color:rgb(115, 80, 255);
+    font-size: 20px;
+}
+.num:nth-child(7){
+    position: absolute;
+    top: 86%;
+    left:22%;
+    font-weight: bolder;
+    color:rgb(115, 80, 255);
+    font-size: 20px;
+}
+.num:nth-child(8){
+    position: absolute;
+    top: 70%;
+    left:8%;
+    font-weight: bolder;
+    color:rgb(115, 80, 255);
+    font-size: 20px;
+}
+.num:nth-child(9){
+    position: absolute;
+    top: 48%;
+    left:1%;
+    font-weight: bolder;
+    color:rgb(115, 80, 255);
+    font-size: 20px;
+}
+.num:nth-child(10){
+    position: absolute;
+    top: 27%;
+    left:6%;
+    font-weight: bolder;
+    color:rgb(115, 80, 255);
+    font-size: 20px;
+}
+.num:nth-child(11){
+    position: absolute;
+    top:10%;
+    left:19%;
+    font-weight: bolder;
+    color:rgb(115, 80, 255);
+    font-size: 20px;
+}
+.num:nth-child(12){
+    position: absolute;
+    top: 1%;
+    left:47%;
+    font-weight: bolder;
+    color:rgb(115, 80, 255);
+    font-size: 20px;
+}
+
+@keyframes rotateHour{
+    from{ transform: rotate(0deg);}
+    to{transform: rotate(360deg)}
+
+}
+@keyframes rotateMinute{
+    from{ transform: rotate(0deg);}
+    to{transform: rotate(360deg)}
+    
+}
+@keyframes rotateSecond{
+    from{ transform: rotate(0deg);}
+    to{transform: rotate(360deg)}
+    
+}
+
